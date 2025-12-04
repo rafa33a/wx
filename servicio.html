@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autolavado El Charco - Interfaz Gráfica</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+    
+    <style>
+        /* Estilos del botón */
+        .action-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        .action-button:hover {
+             background-color: #0056b3;
+        }
+        .button-center-container {
+             text-align: center;
+        }
+        
+        /* CÓDIGO PARA CENTRAR IMAGENES Y TEXTO DENTRO DE CADA PRODUCTO */
+        .product-item {
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            /* Agregamos un ancho para que se dividan en el espacio de la fila */
+            width: 25%; /* Ajusta el ancho para 4 elementos en una fila (100% / 4 = 25%) */
+        }
+
+        /* 🔥 NUEVO CÓDIGO AÑADIDO PARA LA FILA ÚNICA 🔥 */
+        .products-grid {
+            display: flex; /* Convierte el contenedor en una fila flexible */
+            justify-content: space-around; /* Distribuye el espacio entre los elementos */
+            align-items: flex-start; /* Alinea los ítems por arriba */
+            flex-wrap: nowrap; /* Asegura que no se rompa la fila y se apile si hay espacio */
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="header-box">
+        <h1>Autolavado el Charco te ofrece un servicio Premium</h1>
+    </header>
+
+    <main class="content-container">
+        
+        <h2>Contamos con los mejores productos</h2>
+        
+        <div class="products-grid">
+            
+            <div class="product-item">
+                <img src="jabonado.jpeg" alt="Producto de enjabonado">
+                <p>Producto de enjabonado</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="varios.jpeg" alt="Productos varios">
+                <p>Producto de enjabonado, desengrasante, y encerados</p>
+            </div>
+            
+            <div class="product-item selected-item">
+                <img src="encerado.jpeg" alt="Encerado Premium">
+                <p>Encerado Premium</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="kit.jpeg" alt="Equipo de Trabajo">
+                <p>Equipo de Trabajo de la mejor calidad</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bubbles-footer">
+        <div class="button-center-container"> 
+             <a href="index.html" class="action-button">Ir a la Página Principal</a>
+        </div>
+    </footer>
+
+</body>
+</html>
